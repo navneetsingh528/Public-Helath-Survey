@@ -1,131 +1,228 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Public Health Survey Platform</title>
-
-    <!-- Connect the CSS file -->
+    <title>HealthSurvey | Public Health Platform</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">HealthSurvey</h2>
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#home" class="brand">
+            <span class="brand-icon">✚</span>
+            <span>
+                <strong>HealthSurvey</strong>
+                <small>Public Health Survey Platform</small>
+            </span>
+        </a>
 
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#surveys">Surveys</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#surveys">Surveys</a>
+            <a href="#features">Features</a>
+            <a href="#about">About Us</a>
         </nav>
+
+        <a href="#surveys" class="btn nav-btn">Take a Survey →</a>
     </header>
 
-    <!-- Welcome Section -->
-    <section class="hero">
-        <h1>Welcome to Public Health Survey Platform</h1>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="tag">✓ Your Voice, Better Health</div>
 
-        <p>
-            Your voice matters! Participate in health surveys
-            and help us understand public health awareness,
-            habits, and community needs.
-        </p>
+                <h1>
+                    Together for a
+                    <span>Healthier Tomorrow</span>
+                </h1>
 
-        <a href="#surveys" class="btn">Explore Surveys</a>
-    </section>
-
-    <!-- Survey Section -->
-    <section id="surveys" class="survey-section">
-
-        <h2>Available Health Surveys</h2>
-
-        <p class="section-description">
-            Choose a survey and share your opinion.
-            Your responses can help improve community health awareness.
-        </p>
-
-        <div class="survey-container">
-
-            <!-- Survey Card 1 -->
-            <div class="survey-card">
-                <h3>Healthy Lifestyle</h3>
-
-                <p>
-                    Share your daily habits related to exercise,
-                    sleep, and physical activity.
+                <p class="hero-description">
+                    Help us understand community health awareness,
+                    daily habits, and public health needs through
+                    simple surveys.
                 </p>
 
-                <a href="survey.html" class="btn">Take Survey</a>
+                <div class="hero-actions">
+                    <a href="#surveys" class="btn">
+                        Explore Surveys →
+                    </a>
+                    <a href="#features" class="btn btn-outline">
+                        Learn More
+                    </a>
+                </div>
+
+                <div class="trust-points">
+                    <div class="trust-item">
+                        <span class="trust-icon">✓</span>
+                        <div>
+                            <strong>Anonymous</strong>
+                            <small>Privacy focused</small>
+                        </div>
+                    </div>
+
+                    <div class="trust-item">
+                        <span class="trust-icon">♡</span>
+                        <div>
+                            <strong>Community</strong>
+                            <small>Better awareness</small>
+                        </div>
+                    </div>
+
+                    <div class="trust-item">
+                        <span class="trust-icon">+</span>
+                        <div>
+                            <strong>Health First</strong>
+                            <small>Positive change</small>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Survey Card 2 -->
-            <div class="survey-card">
-                <h3>Nutrition Awareness</h3>
+            <div class="hero-visual">
+                <div class="visual-circle">
+                    <div class="health-symbol">✚</div>
+                    <div class="visual-card">
+                        <div class="visual-card-title">
+                            Health Check
+                        </div>
+                        <div class="check-row">✓ Health Awareness</div>
+                        <div class="check-row">✓ Healthy Lifestyle</div>
+                        <div class="check-row">✓ Better Nutrition</div>
+                        <div class="progress-bar">
+                            <span></span>
+                        </div>
+                        <small>Every response makes a difference.</small>
+                    </div>
+                    <div class="floating-badge">♥ Stay Healthy</div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Survey Categories -->
+        <section class="section" id="surveys">
+            <div class="section-heading">
+                <span class="eyebrow">PARTICIPATE & CONTRIBUTE</span>
+                <h2>Explore Our Surveys</h2>
                 <p>
-                    Help us understand eating habits,
-                    balanced diets, and nutrition awareness.
+                    Choose a topic and share your views to help
+                    improve public health awareness.
                 </p>
-
-                <a href="survey.html" class="btn">Take Survey</a>
             </div>
 
-            <!-- Survey Card 3 -->
-            <div class="survey-card">
-                <h3>Personal Hygiene</h3>
+            <div class="survey-grid">
+                <article class="survey-card">
+                    <div class="card-icon lifestyle">↗</div>
+                    <span class="category-label">LIFESTYLE</span>
+                    <h3>Healthy Lifestyle</h3>
+                    <p>
+                        Share your exercise, sleep, and
+                        everyday activity habits.
+                    </p>
+                    <a href="#survey-info" class="card-link">
+                        Take Survey <span>→</span>
+                    </a>
+                </article>
 
+                <article class="survey-card">
+                    <div class="card-icon awareness">♥</div>
+                    <span class="category-label">AWARENESS</span>
+                    <h3>Health Awareness</h3>
+                    <p>
+                        Explore knowledge of disease prevention
+                        and general health practices.
+                    </p>
+                    <a href="#survey-info" class="card-link">
+                        Take Survey <span>→</span>
+                    </a>
+                </article>
+
+                <article class="survey-card">
+                    <div class="card-icon nutrition">✿</div>
+                    <span class="category-label">NUTRITION</span>
+                    <h3>Nutrition & Diet</h3>
+                    <p>
+                        Tell us about food choices and
+                        healthy eating habits.
+                    </p>
+                    <a href="#survey-info" class="card-link">
+                        Take Survey <span>→</span>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="features-section" id="features">
+            <div class="section-heading">
+                <span class="eyebrow">SIMPLE. USEFUL. RESPONSIBLE.</span>
+                <h2>Designed for Better Public Health</h2>
                 <p>
-                    Share your knowledge of hygiene,
-                    handwashing, and disease prevention.
+                    A simple platform to collect feedback and
+                    understand community health needs.
                 </p>
-
-                <a href="survey.html" class="btn">Take Survey</a>
             </div>
 
-        </div>
-    </section>
+            <div class="feature-grid">
+                <article class="feature-item">
+                    <div class="feature-icon">☑</div>
+                    <h3>Easy Surveys</h3>
+                    <p>
+                        Clear questions make it easier for
+                        people to participate.
+                    </p>
+                </article>
 
-    <!-- About Us Section -->
-    <section id="about" class="about-section">
-        <h2>About Our Platform</h2>
+                <article class="feature-item">
+                    <div class="feature-icon">♧</div>
+                    <h3>Privacy Awareness</h3>
+                    <p>
+                        Collect only the information needed
+                        and explain how responses are used.
+                    </p>
+                </article>
 
-        <p>
-            The Public Health Survey Platform is designed to help
-            collect information about public health awareness
-            and everyday health behaviors. It provides a simple
-            way for people to participate in surveys and help
-            organizations understand community needs.
-        </p>
-    </section>
+                <article class="feature-item">
+                    <div class="feature-icon">▥</div>
+                    <h3>Useful Results</h3>
+                    <p>
+                        Organize survey responses to help
+                        identify community trends.
+                    </p>
+                </article>
+            </div>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contact Us</h2>
-
-        <p>
-            Have questions about our surveys?
-            Contact our project team for more information.
-        </p>
-
-        <p>Email: healthsurvey@example.com</p>
-    </section>
+        <!-- Survey Information -->
+        <section class="section" id="survey-info">
+            <div class="privacy-box">
+                <div class="privacy-icon">✓</div>
+                <div>
+                    <h3>Your Opinion Matters</h3>
+                    <p>
+                        Take part in a survey and help us learn
+                        more about community health. Read each
+                        question carefully before responding.
+                    </p>
+                </div>
+                <a href="#surveys" class="btn">Choose a Survey</a>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer" id="about">
+        <a href="#home" class="footer-brand">HealthSurvey</a>
         <p>
-            &copy; 2026 Public Health Survey Platform.
-            All rights reserved.
+            Promoting health awareness through community feedback.
         </p>
-        <p>Created by our student project team.</p>
+        <p class="copyright">
+            © 2026 Public Health Survey Platform | Student Project
+        </p>
     </footer>
-
-    <!-- Connect the JavaScript file -->
-    <script src="script.js"></script>
 
 </body>
 </html>
