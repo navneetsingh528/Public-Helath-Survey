@@ -715,3 +715,77 @@ a:focus-visible {
     border-top: 1px solid #e2e8f0;
 }
 
+/* Survey page */
+.survey-page {
+    min-height: calc(100vh - 220px);
+    padding: 60px 7%;
+    background: var(--pale-green);
+}
+
+.survey-form-card {
+    max-width: 760px;
+    margin: auto;
+    padding: 35px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+}
+
+.back-link {
+    color: var(--green);
+    font-weight: bold;
+}
+
+.survey-form-card h1 {
+    margin-top: 22px;
+    font-size: 32px;
+}
+
+.survey-intro {
+    margin: 8px 0 25px;
+    color: var(--muted);
+}
+
+.survey-question {
+    margin: 0 0 20px;
+    padding: 18px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.survey-question legend {
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+.survey-option {
+    display: block;
+    margin-top: 12px;
+    color: #475569;
+}
+
+.survey-option input {
+    margin-right: 7px;
+    accent-color: var(--green);
+}
+
+.survey-message {
+    margin-top: 16px;
+    color: var(--dark-green);
+    font-weight: bold;
+}
+
+@media (max-width: 650px) {
+    .survey-page {
+        padding: 35px 5%;
+    }
+
+    .survey-form-card {
+        padding: 24px 18px;
+    }
+
+    .survey-form-card h1 {
+        font-size: 27px;
+    }
+}
+
