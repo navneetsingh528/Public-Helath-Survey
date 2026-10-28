@@ -674,3 +674,44 @@ a:focus-visible {
         align-self: flex-start;
     }
 }
+
+/* About Us - Our Mission */
+
+.about-message {
+    max-width: 900px;
+    margin: 40px auto 0;
+    padding: 28px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #dcfce7;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.04);
+}
+
+.about-message h3 {
+    color: #15803d;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.about-message p {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Remove the dark footer box */
+.footer {
+    background: #ffffff;
+    color: #15803d;
+    border-top: 1px solid #dcfce7;
+}
+
+.footer p {
+    color: #64748b;
+}
+
+.footer .copyright {
+    border-top: 1px solid #e2e8f0;
+}
+
