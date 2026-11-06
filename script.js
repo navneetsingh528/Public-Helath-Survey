@@ -129,7 +129,7 @@ const surveys = {
     ]
 };
 
-// This code runs only on the survey page
+
 const surveyForm = document.getElementById("surveyForm");
 
 if (surveyForm) {
@@ -168,7 +168,7 @@ if (surveyForm) {
             questionList.appendChild(questionBox);
         }
 
-        // Save answers when the form is submitted
+        
         surveyForm.addEventListener("submit", function (event) {
             event.preventDefault();
             const answers = [];
